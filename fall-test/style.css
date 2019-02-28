@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #d9e4f5 linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+
+.ball {
+    border-radius: 50%;
+    position: absolute;
+
+    background: #C6ED2C;
+}
