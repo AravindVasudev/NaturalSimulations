@@ -2,7 +2,7 @@
 A collections of simple simulations.
 
 ## Contents
-- [Fall Test](https://aravindvasudev.github.io/NaturalSimulations/mouse-attractor/fall-test/)
+- [Fall Test](https://aravindvasudev.github.io/NaturalSimulations/fall-test/)
 - [Mouse Attractor](https://aravindvasudev.github.io/NaturalSimulations/mouse-attractor/)
 
 ## Contribute
