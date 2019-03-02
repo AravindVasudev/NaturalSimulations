@@ -16,8 +16,8 @@ window.addEventListener('load', () => {
     canvas.height = HEIGHT;
 
     // Init World Forces
-    gravity = new Vector(0, 2);
-    wind = new Vector(0.8, 0);
+    gravity = new Vector(0, 0.2);
+    wind = new Vector(0.08, 0);
 
     // Init Balls
     const balls = [];
@@ -60,6 +60,7 @@ class Ball {
     }
 
     update() {
+        gravity.mult(this.mass);
         this.applyForce(gravity);
         this.applyForce(wind);
 
@@ -69,6 +70,7 @@ class Ball {
 
         this._boundaryCheck();
         this.acceleration.mult(0); // reset acceleration
+        gravity.div(this.mass); // reset gravity
     }
 
     applyForce(force) {
